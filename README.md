@@ -6,5 +6,7 @@ This is the data from the coinmarketcap for the first 150 coins per year. Data w
 2. **Check** in file settings that is unblocked.
 3. Open file and choose coin on Data sheet. 
 4. **Watch** on charts.
+
 For more **instructions** https://github.com/didbit/RESEARCH/blob/master/docs/CryptoPublic.md
+
 In **Russian** https://github.com/didbit/RESEARCH/blob/master/docs/CruptoPublic_RU.txt
