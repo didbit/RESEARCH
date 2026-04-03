@@ -1,12 +1,34 @@
-# Research results
+# Crypto Market Longitudinal Research (2018–2019)
 
-![btc vs moneyflow](docs/MF.jpg)
-This is the data from the coinmarketcap for the first 150 coins per year. Data was taken once a day at approximately the same time. This is the main part of my research, which formed the basis of the trading strategy. These data allow us better understand the market and coins in particular.
-1. **Download tool** https://github.com/didbit/RESEARCH/blob/master/tools/CryptoPublic.xlsx
-2. **Check** in file settings that is unblocked.
-3. Open file and choose coin on Data sheet. 
-4. **Watch** on charts.
+A quantitative research dataset built as the foundation for an algorithmic trading strategy.
 
-For more **instructions** https://github.com/didbit/RESEARCH/blob/master/docs/CryptoPublic.md
+## What This Is
 
-In **Russian** https://github.com/didbit/RESEARCH/blob/master/docs/CruptoPublic_RU.txt
+Daily snapshots of the **top-150 cryptocurrency assets** by market cap, collected from CoinMarketCap over a 12-month period. Data was captured at consistent intervals to ensure time-series integrity.
+
+This dataset was used to identify structural patterns in crypto market cycles, cross-asset correlations, and momentum signals that informed a risk-neutral trading strategy.
+
+## Key Findings
+
+- Identified recurring liquidity patterns across market cap tiers
+- Modeled cross-asset correlation breakdowns during high-volatility regimes
+- Built a multi-timeframe analysis toolkit (see `/tools`) for per-coin behavioral analysis
+
+## Usage
+
+1. Download [`CryptoPublic.xlsx`](tools/CryptoPublic.xlsx)
+2. In Excel: File → Properties → Unblock (if prompted)
+3. Open the `Data` sheet and select a coin
+4. Navigate to the `Charts` sheet for visual analysis
+
+Full instructions: [`docs/CryptoPublic.md`](docs/CryptoPublic.md)
+
+## Stack
+
+- Data collection: Python (CoinMarketCap API)
+- Analysis: Excel (multi-sheet, dynamic charts)
+- Scope: Top-150 assets, daily granularity, 2018–2019
+
+## Context
+
+This research preceded my transition into on-chain forensics and DeFi risk modeling. The same quantitative approach — collecting raw market data, identifying anomalies, and modeling expected value — now applied to blockchain transaction analysis and protocol vulnerability research.
